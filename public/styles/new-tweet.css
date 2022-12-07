@@ -1,0 +1,27 @@
+.tweet-form {
+  display: flex;
+  flex-direction: column;
+}
+.tweet-button {
+  background-color: #26366d;
+  color: #ffffff;
+  margin-top: 5px;
+}
+.tweet-button:hover {
+  box-shadow: 6px 6px 2px 1px rgba(160, 147, 91, 0.35)
+}
+.tweet-counter {
+  display: flex;
+  justify-content: space-between;
+  font-family: Bungee;
+
+}
+.text-area {
+  background-color:rgb(231, 231, 171);
+  background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+  border: 0;
+  border-bottom: 3px solid #545149;
+}
+.red {
+  color: red;
+}
