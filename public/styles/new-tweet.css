@@ -3,25 +3,35 @@
   flex-direction: column;
 }
 .tweet-button {
-  background-color: #26366d;
+  background-color: #886915;
   color: #ffffff;
   margin-top: 5px;
 }
 .tweet-button:hover {
-  box-shadow: 6px 6px 2px 1px rgba(160, 147, 91, 0.35)
+  box-shadow: 6px 6px 2px 1px #886915;
 }
 .tweet-counter {
   display: flex;
   justify-content: space-between;
   font-family: Bungee;
-
 }
 .text-area {
-  background-color:rgb(231, 231, 171);
-  background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+  background-color:rgb(6, 39, 53);
+  background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
   border: 0;
-  border-bottom: 3px solid #545149;
+  border-bottom: 3px solid #886915;
+  color: #886915;
+  margin: 15px;
+}
+.text-area:hover {
+  /* background-color: #886915; */
+  border: 3px solid #886915;
+  box-shadow: 10px 10px 2px 1px #886915;
 }
 .red {
   color: red;
+}
+#error {
+  color: red;
+  margin: 5px;
 }

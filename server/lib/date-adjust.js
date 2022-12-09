@@ -14,7 +14,9 @@ module.exports = () => {
   // Subtract one day in milliseconds (oneDayMs) times the tweets length minus the current index.
   // This keeps the newest tweets at the bottom, and allows for further tweets to be added.
   tweetsJSON = tweetsJSON.map((tweet, index) => {
-    tweet.created_at = Date.now() - (oneDayMs * (tweetsJSON.length - index));
+    const date = new Date();
+    const localDate = date.toLocaleString('en-US', { timeZone: 'America/Vancouver' });
+    tweet.created_at = (new Date(localDate)) - (oneDayMs * (tweetsJSON.length - index));
     return tweet;
   });
   // Re-write the tweets with the new date values.

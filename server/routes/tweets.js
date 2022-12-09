@@ -24,12 +24,14 @@ module.exports = function(DataHelpers) {
     }
 
     const user = req.body.user ? req.body.user : userHelper.generateRandomUser();
+    const date = new Date();
+    const localDate = date.toLocaleString('en-US', { timeZone: 'America/Vancouver' });
     const tweet = {
       user: user,
       content: {
         text: req.body.text
       },
-      created_at: Date.now()
+      created_at: ((new Date(localDate)) + (60*60*10.5))
     };
 
     DataHelpers.saveTweet(tweet, (err) => {

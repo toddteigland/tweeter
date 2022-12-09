@@ -1,6 +1,7 @@
 nav {
   height: 120px;
-  background-color: #26366d;
+  background-color:rgb(6, 39, 53);
+  background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
   color: #ffffff;
   width: 100%;
   display: flex;
@@ -10,6 +11,14 @@ nav {
   position: fixed;
   top: 0;
 }
+@media only screen and (min-width: 768px) {
+  nav {
+    background-color: none;
+    background-image: none;
+    background: rgb(36,23,0);
+    background: linear-gradient(90deg, rgba(36,23,0,1) 5%, rgba(121,69,9,1) 35%, rgba(255,162,0,1) 100%); 
+  } 
+}
 
 nav span {
   font-family: Bungee;
@@ -17,30 +26,46 @@ nav span {
 }
 .right {
   margin: 0em 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.dDown {
+.down-arrow {
   color: red;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 50%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
-
-.personHeader {
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 120px;
-  background-color:rgb(231, 231, 171);
-  background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+.down-arrow i:hover {
+  color: goldenrod;
 }
 body{
-  background-color:rgb(231, 231, 171);
-  background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+  background-color: rgb(6, 39, 53);
+  background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 }
 main {
   width: 90%;
   margin: 0 auto;
+}
 
+@media only screen and (min-width: 768px) {
+ .down-arrow i:hover {
+  color:rgb(6, 39, 53);
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: row;
+  }
 
+  .container {
+    width: 50%;
+    margin-left: auto;
+    margin-right: 10px;
+    margin-top: 150px;
+  }
 }
