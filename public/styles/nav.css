@@ -11,25 +11,19 @@ nav {
   position: fixed;
   top: 0;
 }
-@media only screen and (min-width: 768px) {
-  nav {
-    background-color: none;
-    background-image: none;
-    background: rgb(36,23,0);
-    background: linear-gradient(90deg, rgba(36,23,0,1) 5%, rgba(121,69,9,1) 35%, rgba(255,162,0,1) 100%); 
-  } 
-}
 
 nav span {
   font-family: Bungee;
   margin: 0em 1.5em;
 }
-.right {
+
+.nav__right-side {
   margin: 0em 1.5em;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .down-arrow {
   color: red;
   display: flex;
@@ -40,19 +34,29 @@ nav span {
   border: none;
   cursor: pointer;
 }
+
 .down-arrow i:hover {
   color: goldenrod;
 }
+
 body{
   background-color: rgb(6, 39, 53);
   background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 }
-main {
+
+.container {
   width: 90%;
   margin: 0 auto;
 }
 
 @media only screen and (min-width: 768px) {
+  nav {
+    background-color: none;
+    background-image: none;
+    background: rgb(36,23,0);
+    background: linear-gradient(90deg, rgba(36,23,0,1) 5%, rgba(121,69,9,1) 35%, rgba(255,162,0,1) 100%); 
+  }
+
  .down-arrow i:hover {
   color:rgb(6, 39, 53);
   }

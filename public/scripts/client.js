@@ -62,7 +62,7 @@ $(document).ready(function() {
     console.log("DATE NOW", Date.now());
     const $tweet = $(`<article class="tweet-container">
     <div class="tweet-header">
-      <div class="nameAvatar">
+      <div class="current-user__avatar">
         <h3>${tweetData.user.name}</h3>
         <div><img src="${tweetData.user.avatars}"></div>
       </div>

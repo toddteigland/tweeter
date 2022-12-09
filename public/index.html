@@ -43,24 +43,25 @@
     <header>
       <nav class="nav">
         <span>Tweeter</span>
-        <div class="right">
-          <div class="write"><strong>Write</strong> a new tweet</div>
-            <button class="down-arrow" id="createTweet"><i class="fa-solid fa-angles-down fa-beat"
-              style="--fa-beat-scale: 1.5;"></i></button>
+        <div class="nav__right-side">
+          <div><strong>Write</strong> a new tweet</div>
+          <button aria-label="Jump to create tweet" class="down-arrow" id="createTweet">
+            <i class="fa-solid fa-angles-down fa-beat" style="--fa-beat-scale: 1.5;" aria-hidden="true"></i>
+          </button>
         </div>
       </nav>
     </header>
-    <div class="main-content">
+    <main class="main-content">
       <div class="current-user">
         <div>
-          <img src="/images/profile-hex.png" height="200" width="200">
+          <img alt="" src="/images/profile-hex.png" height="200" width="200">
         </div>
         <div>
           <h2 class="current-user__name">Your Name</h2>
         </div>
       </div>
       <!-- Page-specific (main) content here -->
-      <main class="container">
+      <div class="container">
         <section class="new-tweet" hidden>
           <h2>Compose Tweet</h2>
           <form class="tweet-form" method="POST" action="/tweets">
@@ -75,7 +76,7 @@
         </section>
         <div class="tweets-container">
         </div>
-      </main>
-    </div>
+      </div>
+    </main>
   </body>
 </html>

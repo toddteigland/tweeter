@@ -10,6 +10,17 @@
 .current-user__name {
   margin-top: 0;
 }
+
+.current-user__avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.current-user__avatar h2 {
+  margin: 0 10px;
+}
+
 @media only screen and (min-width: 768px) {
   .current-user {
     width: 45%;

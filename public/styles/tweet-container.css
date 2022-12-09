@@ -7,44 +7,48 @@
   flex-direction: column;
   word-break: break-all;
 }
+
 .tweet-container:hover {
   box-shadow: 10px 10px 2px 1px #886915;
 }
+
 .tweet-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 0 10px;
 }
+
 .tweet-content {
   border-bottom: 3px solid #886915;
   margin: 0 15px;
 }
+
 .tweet-footer {
   display: flex;
   justify-content: space-between;
   margin: 10px 10px;
 }
+
 .tweet-footer p {
   margin: 0;
   font-size: .75em;
 }
+
 .tweet-symbols {
   color: #26366d;
-  width: 15%;
+  width: 25%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
 }
+
 i:hover {
   color: goldenrod;
 }
-.nameAvatar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
-}
-.nameAvatar h2 {
-  margin: 0 10px;
+@media only screen and (min-width: 768px) {
+  .tweet-symbols {
+    width: 18%;
+  }
 }
