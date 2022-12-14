@@ -5,9 +5,9 @@ A simple single page AXAJ based clone of Twitter using HTML, Javascript and CSS.
 
 ## Screenshots
 
-!['Screenshot of tweeter at full size'] (https://github.com/toddteigland/tweeter/blob/master/docs/tweeter-fullsize.png)
+!['Screenshot of tweeter at full size'](/docs/tweeter-fullsize.png)
 
-!['Screenshot of tweeter at mobile size'] (https://github.com/toddteigland/tweeter/blob/master/docs/tweeter-mobilesize.png)
+!['Screenshot of tweeter at mobile size'](/docs/tweeter-mobilesize.png)
 
 
 ## Dependencies
